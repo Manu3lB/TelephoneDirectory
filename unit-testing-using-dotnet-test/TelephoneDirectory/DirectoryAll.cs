@@ -79,12 +79,6 @@ namespace TelephoneDirectory
                         Console.WriteLine("====================================================");
                     }
                 }
-                else
-                {
-                    Console.WriteLine("====================================================");
-                    Console.WriteLine("==    El directorio no se encuentra con espacio   ==");
-                    Console.WriteLine("====================================================");
-                }
             }
             catch { };
         }
