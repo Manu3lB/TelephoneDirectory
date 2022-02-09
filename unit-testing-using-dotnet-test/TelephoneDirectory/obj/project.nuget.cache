@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JPVEaBb7vYTlqNzogFczHGekawi3Lbv31V3HpDhzujFTjguj/vd+X5APmpcKvR9gdkB3nhHDfA/Yr/mHRmJD7g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryFluentValidation\\unit-testing-using-dotnet-test\\TelephoneDirectory\\TelephoneDirectory.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jmbarraganm\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512"
+  ],
+  "logs": []
+}
