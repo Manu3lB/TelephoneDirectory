@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryT\\unit-testing-using-dotnet-test\\TelephoneDirectory.Tests\\TelephoneDirectory.Tests.csproj": {}
+    "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryFluentValidation\\unit-testing-using-dotnet-test\\TelephoneDirectory.Tests\\TelephoneDirectory.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryT\\unit-testing-using-dotnet-test\\TelephoneDirectory.Tests\\TelephoneDirectory.Tests.csproj": {
+    "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryFluentValidation\\unit-testing-using-dotnet-test\\TelephoneDirectory.Tests\\TelephoneDirectory.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryT\\unit-testing-using-dotnet-test\\TelephoneDirectory.Tests\\TelephoneDirectory.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryFluentValidation\\unit-testing-using-dotnet-test\\TelephoneDirectory.Tests\\TelephoneDirectory.Tests.csproj",
         "projectName": "TelephoneDirectory.Tests",
-        "projectPath": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryT\\unit-testing-using-dotnet-test\\TelephoneDirectory.Tests\\TelephoneDirectory.Tests.csproj",
+        "projectPath": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryFluentValidation\\unit-testing-using-dotnet-test\\TelephoneDirectory.Tests\\TelephoneDirectory.Tests.csproj",
         "packagesPath": "C:\\Users\\jmbarraganm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryT\\unit-testing-using-dotnet-test\\TelephoneDirectory.Tests\\obj\\",
+        "outputPath": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryFluentValidation\\unit-testing-using-dotnet-test\\TelephoneDirectory.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jmbarraganm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryT\\unit-testing-using-dotnet-test\\TelephoneDirectory\\TelephoneDirectory.csproj": {
-                "projectPath": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryT\\unit-testing-using-dotnet-test\\TelephoneDirectory\\TelephoneDirectory.csproj"
+              "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryFluentValidation\\unit-testing-using-dotnet-test\\TelephoneDirectory\\TelephoneDirectory.csproj": {
+                "projectPath": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryFluentValidation\\unit-testing-using-dotnet-test\\TelephoneDirectory\\TelephoneDirectory.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryT\\unit-testing-using-dotnet-test\\TelephoneDirectory\\TelephoneDirectory.csproj": {
+    "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryFluentValidation\\unit-testing-using-dotnet-test\\TelephoneDirectory\\TelephoneDirectory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryT\\unit-testing-using-dotnet-test\\TelephoneDirectory\\TelephoneDirectory.csproj",
+        "projectUniqueName": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryFluentValidation\\unit-testing-using-dotnet-test\\TelephoneDirectory\\TelephoneDirectory.csproj",
         "projectName": "TelephoneDirectory",
-        "projectPath": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryT\\unit-testing-using-dotnet-test\\TelephoneDirectory\\TelephoneDirectory.csproj",
+        "projectPath": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryFluentValidation\\unit-testing-using-dotnet-test\\TelephoneDirectory\\TelephoneDirectory.csproj",
         "packagesPath": "C:\\Users\\jmbarraganm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryT\\unit-testing-using-dotnet-test\\TelephoneDirectory\\obj\\",
+        "outputPath": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryFluentValidation\\unit-testing-using-dotnet-test\\TelephoneDirectory\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jmbarraganm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -121,6 +121,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

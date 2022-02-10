@@ -6,7 +6,6 @@
 
 dotnet run
 
-dotnet run --project .\RockPaperScissors\RockPaperScissors.csproj
 ``
 
 ### Correr los test

@@ -23,16 +23,16 @@ namespace TelephoneDirectory
 
                     if (sizeLocal > 10)
                     {
-                        Console.WriteLine("\n");
-                        Console.WriteLine("===========================================================================================");
+                        Console.WriteLine("\n===========================================================================================");
+                        Console.WriteLine("=======================      VALOR INVALIDO           =====================================");
                         Console.WriteLine("==  Por favor Indique el número de contactos que desea adicionar, que este entre 1 y 10. ==");
                         Console.WriteLine("===========================================================================================");
                         Console.WriteLine("\n");
                     }
                     else if (sizeLocal < 1)
                     {
-                        Console.WriteLine("\n");
-                        Console.WriteLine("===========================================================================================");
+                        Console.WriteLine("\n===========================================================================================");
+                        Console.WriteLine("=======================      VALOR INVALIDO           =====================================");
                         Console.WriteLine("==  Por favor Indique el número de contactos que desea adicionar, que este entre 1 y 10. ==");
                         Console.WriteLine("===========================================================================================");
                         Console.WriteLine("\n");
@@ -45,8 +45,7 @@ namespace TelephoneDirectory
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("\n");
-                    Console.WriteLine("===========================================================================================");
+                    Console.WriteLine("\n===========================================================================================");
                     Console.WriteLine("=======================      VALOR INVALIDO           =====================================");
                     Console.WriteLine("==  Por favor Indique el número de contactos que desea adicionar, que este entre 1 y 10. ==");
                     Console.WriteLine("===========================================================================================");
@@ -67,10 +66,25 @@ namespace TelephoneDirectory
                 {
                     if (!ExistContact(contacts))
                     {
-                        listContacts.Add(contacts);
-                        Console.WriteLine("====================================================");
-                        Console.WriteLine("==        Se agrego correctamente el contacto     ==");
-                        Console.WriteLine("====================================================");
+                        var validator = new DirectoryValidator(listContacts);
+                        ValidationResult result = validator.Validate(contacts);
+                        if (!result.IsValid)
+                        {
+                            foreach (var error in result.Errors)
+                            {
+                                Console.WriteLine($"Error en {error.PropertyName} {error.ErrorMessage}");
+                                Console.WriteLine("====================================================");
+                                Console.WriteLine("==    No se agrego el contacto al directorio      ==");
+                                Console.WriteLine("====================================================");
+                            }
+                        }
+                        else
+                        {
+                            listContacts.Add(contacts);
+                            Console.WriteLine("====================================================");
+                            Console.WriteLine("==        Se agrego correctamente el contacto     ==");
+                            Console.WriteLine("====================================================");
+                        }
                     }
                     else
                     {
@@ -189,26 +203,5 @@ namespace TelephoneDirectory
             return directoryWhitspace;
         }
 
-        public void DateContact()
-        {
-            List<Contact> contacts = new List<Contact>();
-            var contact = new Contact() { name = "Juanaaaaaaaaaaaaaaaaaanannanannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", phoneNumber = "123456789", cellPhone = "21321515151521515151" };
-            contacts.Add(contact);
-            var validator = new DirectoryValidator(contacts);
-            ValidationResult result = validator.Validate(contact);
-
-            if (!result.IsValid)
-            {
-                foreach (var error in result.Errors)
-                {
-                    Console.WriteLine($"Error en {error.PropertyName} {error.ErrorMessage}");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Todo bien");
-            }
-
-        }
     }
 }
