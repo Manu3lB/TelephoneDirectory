@@ -116,12 +116,7 @@ namespace TelephoneDirectory
                 Console.WriteLine("\nEscriba el nombre del contacto :");
                 contacts.name = Console.ReadLine();
                 name = contacts.name;
-                if (name == ""){
-                    foreach (var error in result.Errors){
-                        Console.WriteLine($"Error en {error.PropertyName} {error.ErrorMessage}");
-                    }
-                }
-            } while (name == "");
+            } while (name == "" || name == null);
             Console.WriteLine("Escriba el telefono del contacto :");
             string phoneNumber = Console.ReadLine();
             Console.WriteLine("Escriba el celular del contacto :");

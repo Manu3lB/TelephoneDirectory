@@ -72,11 +72,11 @@ namespace TelephoneDirectory
                         {
                             foreach (var error in result.Errors)
                             {
-                                Console.WriteLine($"Error en {error.PropertyName} {error.ErrorMessage}");
-                                Console.WriteLine("====================================================");
-                                Console.WriteLine("==    No se agrego el contacto al directorio      ==");
-                                Console.WriteLine("====================================================");
+                                Console.WriteLine($"\n==  Error en {error.PropertyName}  ==\n==  {error.ErrorMessage}  ==");
                             }
+                            Console.WriteLine("====================================================");
+                            Console.WriteLine("==    No se agrego el contacto al directorio      ==");
+                            Console.WriteLine("====================================================");
                         }
                         else
                         {
