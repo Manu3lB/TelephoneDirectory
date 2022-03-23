@@ -42,7 +42,7 @@ public class UnitTest1
         //Arrange
         DirectoryAll testAddContact = new DirectoryAll();
         bool addContact = false;
-        bool currentContact = true;
+        bool currentContact = false;
         //Act
         testAddContact.AddContact(new Contact("Marcela", "1234567", "3112111"));
         testAddContact.AddContact(new Contact("Felipe", "1234567", "3112111"));

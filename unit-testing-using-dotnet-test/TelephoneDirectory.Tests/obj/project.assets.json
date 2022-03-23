@@ -6042,6 +6042,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://ec2-54-205-136-245.compute-1.amazonaws.com/api/v4/projects/2/packages/nuget/index.json": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://nuget.devexpress.com/api": {}
       },
