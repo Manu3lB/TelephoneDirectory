@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "qnEGKEkLbFPF3sXlP5Ho3W4NGJ8p6JcQTvobCaydWcV+QWAZGZiwVVINiG8oWEm6PoN8LZdB1J9Ws6N1RklGIQ==",
+  "dgSpecHash": "V7oUcY8Pve6q+y2XjB0a6V8ahXlI19yLV11i/NKaKDooXZuQDbxr/JHglKOKpJIi2Cm2pMCPF+szdigAhmKaig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryT\\unit-testing-using-dotnet-test\\TelephoneDirectory.Tests\\TelephoneDirectory.Tests.csproj",
+  "projectFilePath": "C:\\Users\\jmbarraganm\\Desktop\\Siesa\\.Net\\ProjectTelephoneDirectoryFluentValidation\\unit-testing-using-dotnet-test\\TelephoneDirectory.Tests\\TelephoneDirectory.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jmbarraganm\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
+    "C:\\Users\\jmbarraganm\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\jmbarraganm\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
     "C:\\Users\\jmbarraganm\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\jmbarraganm\\.nuget\\packages\\microsoft.net.test.sdk\\16.11.0\\microsoft.net.test.sdk.16.11.0.nupkg.sha512",
