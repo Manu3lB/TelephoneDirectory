@@ -1,11 +1,10 @@
-﻿namespace TelephoneDirectory;
-
+﻿using FluentValidation.Validators;
+namespace TelephoneDirectory;
 public class Class1
 {
     public static void Main(string[] args)
     {
-        DirectoryAll validator = new DirectoryAll();
-        validator.DateContact();
+        Contact contact = new Contact();
         Menu menu = new Menu();
         menu.DirectoryMenu();
     }

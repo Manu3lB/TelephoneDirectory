@@ -1,4 +1,4 @@
-
+using FluentValidation.Results;
 namespace TelephoneDirectory
 {
     public class Menu
@@ -106,13 +106,17 @@ namespace TelephoneDirectory
 
         public Contact AskForInformation()
         {
+            Contact contacts = new Contact();
+            var validator = new DirectoryValidator(listContacts);
+            ValidationResult result = validator.Validate(contacts);
             string name = "";
             do
             {
                 Console.WriteLine("Es obligatorio ingresar el nombre del contacto en este campo");
                 Console.WriteLine("\nEscriba el nombre del contacto :");
-                name = Console.ReadLine();
-            } while (name == "");
+                contacts.name = Console.ReadLine();
+                name = contacts.name;
+            } while (name == "" || name == null);
             Console.WriteLine("Escriba el telefono del contacto :");
             string phoneNumber = Console.ReadLine();
             Console.WriteLine("Escriba el celular del contacto :");
@@ -120,11 +124,35 @@ namespace TelephoneDirectory
             return new Contact(name.ToUpper(), phoneNumber, cellPhone);
         }
 
+        //  public void DateContact()
+        // {
+        //     List<Contact> contacts = new List<Contact>();
+        //     var contact = new Contact() { name = "Juanaaaaaaaaaaaaaaaaaanannanannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", phoneNumber = "123456789", cellPhone = "21321515151521515151" };
+        //     contacts.Add(contact);
+        //     var validator = new DirectoryValidator(contacts);
+        //     ValidationResult result = validator.Validate(contact);
+
+        //     if (!result.IsValid)
+        //     {
+        //         foreach (var error in result.Errors)
+        //         {
+        //             Console.WriteLine($"Error en {error.PropertyName} {error.ErrorMessage}");
+        //         }
+        //     }
+        //     else
+        //     {
+        //         Console.WriteLine("Todo bien");
+        //     }
+
+        // }
+
         public Contact AskForName()
         {
+            List<Contact> contacts = new List<Contact>();
             Console.WriteLine("Escriba el nombre del contacto :");
             string nameAsk = Console.ReadLine();
-            return new Contact(nameAsk.ToUpper());
+            var contact = new Contact(nameAsk.ToUpper());
+            return contact;
         }
 
         public string SearchForName()
@@ -166,6 +194,8 @@ namespace TelephoneDirectory
 
         public void ValidateExistContact()
         {
+
+
             if (directoryAll.ExistContact(AskForName()))
             {
                 Console.WriteLine("==========================================================");
